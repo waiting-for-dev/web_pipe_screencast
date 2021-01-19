@@ -86,7 +86,7 @@ module PlanetWeight
             weight: conn.fetch(:weight),
             planet: conn.fetch(:planet),
             planet_weight: conn.fetch(:planet_weight)
-        )
+          )
       end
     end
   end
