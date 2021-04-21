@@ -1,0 +1,4 @@
+#!/usr/bin/env -S ruby -W0
+# frozen_string_literal: true
+
+require_relative '../interfaces/cli/system/boot'

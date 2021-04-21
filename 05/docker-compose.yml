@@ -1,0 +1,14 @@
+version: '2'
+services:
+  app:
+    build: .
+    image: web_pipe_screencast_05
+    command: bash -c "bundle && bundle exec rerun -- bundle exec rackup -o 0.0.0.0"
+    ports:
+      - "9292:9292"
+    volumes:
+      - .:/home/web_pipe_user/app
+    tty: true
+    stdin_open: true
+    tmpfs:
+      - /tmp
